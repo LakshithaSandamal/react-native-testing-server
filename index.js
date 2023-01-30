@@ -3,7 +3,9 @@ const Http = require("http").Server(Express);
 
 
 Express.get('/',(req,res)=>{
-    res.send("Hello boy");
+    res.json({
+        name:"Lakshita"
+    })
 });
 
 Http.listen(3000);
